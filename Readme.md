@@ -1,3 +1,17 @@
+# setting
+ln -s /home/{userid}/Android/Sdk/ndk/20.1.5948944/ /home/{userid}/Android/Sdk/ndk-bundle
+
+# Change 
+1. build.bat ( use default ndk path)
+
+# Fork updates
+
+The update that made in this fork: 
+1. Open3D version for 0.9.0. 
+For 0.9.0, it has PossionRecon-android.patch for the submodule PossionRecon.
+2. The original repo removes Tools and Visualization, in this fork IO module is removed since some external libraries are hard to compile (turbojpeg).
+3. The abi includes armeabi-v7a and arm64-v8a. 
+
 # Building Open3D core for Android
 
 CMake scripts for cross-compiling the core library of [Open3D](http://www.open3d.org/) for Android and linking to it with Android Studio.
